@@ -12,7 +12,7 @@ Ideas:
 - In the menu screen, have a button the user can click to resize the screen. That way, they can make the screen smaller at the click of a button. https://www.w3schools.com/jsref/
 met_win_resizeto.asp
 - In the dropdown menu, include checkboxes for filters. The user can filter for the type of data they need: correctly formatted, incorrectly formatted, social security numbers, phone numbers, etc.
-- Have a Halloween theme. Change the crest out for a pumpkin. The entity names will be scary movie characters.
+- Have a Halloween theme. Change the crest out for a pumpkin. The entity names will be scary movie characters or classic monsters.
 - It would also be cool if I could link data to hotkeys. 
 - The filters could be stored in JavaScript memory.
 - I could include items with dollar ammounts. For example, on the Harry Potter them, I could add items for sell by the weasley twins, broomsticks, etc.

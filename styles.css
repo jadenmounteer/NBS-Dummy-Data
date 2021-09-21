@@ -21,6 +21,19 @@
     src: url(https://cdn.glitch.com/96e7d60a-fbf1-48c3-a81b-6fd525ffafe8%2FLumoslatino-XA8K.ttf?v=1622323400147);
 }
 
+/* Halloween */
+/* Creepster. For titles */
+/* font-family: 'Creepster', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+/* 
+Colors: 
+Purple: #602749
+Orange:#ff5800
+light-orange: #ffa500
+Yellow: ##fff100
+*/
+
 
 
 /* Reset the margin and padding of everything so we can get rid of the white border that the browser gives us by default*/
@@ -192,6 +205,7 @@ textarea {
 #text-area-1, #text-area-2 {
     background-color: #dbcea2;
     color: #0a5c00;
+    text-align: left;
 }
 
 .text-area-button-div {
@@ -202,18 +216,6 @@ textarea {
 }
 
 /* MEDIA QUERIES */
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
