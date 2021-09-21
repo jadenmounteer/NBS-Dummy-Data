@@ -15,6 +15,7 @@ met_win_resizeto.asp
 - Have a Halloween theme. Change the crest out for a pumpkin. The entity names will be scary movie characters.
 - It would also be cool if I could link data to hotkeys. 
 - The filters could be stored in JavaScript memory.
+- I could include items with dollar ammounts. For example, on the Harry Potter them, I could add items for sell by the weasley twins, broomsticks, etc.
 
 How to access the page:
 This site is currently hosted on GitHub pages here: https://jadenmounteer.github.io/NBS-Dummy-Data/
