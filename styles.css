@@ -2,6 +2,11 @@
 
 /*** FONTS ***/
 
+/* Roboto, for paragraphs and body text */
+/* font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
 /* HARRY POTTER */
 
 /* Import the Harry Potter font which was downloaded from the internet Use this for the logo */
@@ -31,13 +36,15 @@ header {
     display: grid;
     grid-template-columns: 40% 50% 10%;
     grid-template-rows: 1;
+   
 }
 
 /* The title */
 #dummy-data-title {
     font-family: harry-potter, lumos-latino;
     color: #EDC664;
-    font-size: 5em;
+    font-size: 4em;
+    margin-left: 100px;
 }
 
 /* STYLE THE BODY OF THE PAGE */
@@ -49,6 +56,8 @@ body {
     background-size: 500px;
     background-position: center;
 }
+
+
 
 
 
@@ -101,6 +110,10 @@ body {
     transition: 0.4s;
   }
 
+  #hamburger-menu {
+      margin-left: 110px;
+  }
+
   
   /* Rotate first bar */
   .change #bar1 {
@@ -122,12 +135,6 @@ body {
 
   /* STYLE THE MAIN CONTENT OF THE PAGE */
 
-/* The background image */
-main {
-    
-    
-
-}
 
 /* STYLE THE TABLES */
 table {
@@ -136,6 +143,88 @@ table {
     margin-right: auto;
 }
 /* Style the rows */
-tr {
+.row-content, .row-name {
     background-color: rgb(255,255,255, 0.9);
+}
+
+.row-name {
+    font-family: lumos-latino;
+}
+td {
+    padding: 15px;
+    /* Make the words wrap if they reach the max width */
+    word-wrap: break-word;
+}
+
+.row-content {
+    max-width: 250px;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Style the buttons to copy the text */
+.copy-button {
+    background-color: #EDC664;
+    font-family: harry-potter, lumos-latino;
+    padding: 20px;
+    font-size: 30px;
+    
+}
+
+.copy-button:hover {
+    background-color: #ad080a;
+    color: #fbc061;
+}
+
+/* STYLE THE TEXT AREAS */
+textarea {
+    margin-top: 80px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 7em;
+    padding-right: 7em;
+    height: 400px;
+}
+
+#text-area-1, #text-area-2 {
+    background-color: #dbcea2;
+    color: #0a5c00;
+}
+
+.text-area-button-div {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MEDIA QUERIES */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    /* The title */
+    #dummy-data-title {
+        font-size: 8em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #hamburger-menu {
+        margin-left: 50px;
+    }
 }

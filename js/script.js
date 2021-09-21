@@ -28,16 +28,19 @@ function copyText(elementId, buttonId) {
 
     /* Create a list of all of the buttons to copy */
     listOfButtons = document.getElementsByClassName('copy-button');
-    console.log(listOfButtons);
 
     /* Loop through the list of buttons and change the color to... */
     for (let i = 0; i < listOfButtons.length; i++) {
-        console.log(listOfButtons[i]);
-        listOfButtons[i].style.backgroundColor = 'red';
+        listOfButtons[i].style.backgroundColor = '#EDC664';
+        listOfButtons[i].style.color = 'black';
+        
+        
     }
 
     /* Change the color of the button that was clicked to... */
-    document.getElementById(buttonId).style.backgroundColor = 'green';
+    document.getElementById(buttonId).style.backgroundColor = '#0a5c00';
+    document.getElementById(buttonId).style.color = '#696c68';
+    
 
 }
 
