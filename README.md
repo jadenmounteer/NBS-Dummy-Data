@@ -12,6 +12,7 @@ Ideas:
 - In the menu screen, have a button the user can click to resize the screen. That way, they can make the screen smaller at the click of a button. https://www.w3schools.com/jsref/
 met_win_resizeto.asp
 - In the dropdown menu, include checkboxes for filters. The user can filter for the type of data they need: correctly formatted, incorrectly formatted, social security numbers, phone numbers, etc.
+- Have a Halloween theme. Change the crest out for a pumpkin. The entity names will be scary movie characters.
 
 How to access the page:
 This site is currently hosted on GitHub pages here: https://jadenmounteer.github.io/NBS-Dummy-Data/
