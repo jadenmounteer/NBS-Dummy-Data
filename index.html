@@ -5,20 +5,74 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Link to the CSS Stylesheet -->
         <link rel="stylesheet" href="styles.css" />
-        <!-- Link to the JavaScript file-->
-        <!--
-            <script src="js/main.js" defer></script>
-        -->
+        <!-- Link to the JavaScript file-->        
+            <script src="js/script.js" defer></script>
+
         
         <title>NBS Dummy Data</title>
     </head>
     <body>
         <div id="content">
             <header>
+                <!-- NBS Logo -->
+                <div id="logo-div">
+                    <img
+                    id="img-logo"
+                    alt="NBS Logo"
+                    height="131"
+                    src="http://www.nbsbenefits.com/images/NBSLogoYellow200.gif"
+                    width="200"
+                    />
+                </div>
+                <!-- Dummy Data Title -->
+                <div id="dummy-data-title-div">
+                    <h1 id="dummy-data-title">Dummy Data</h1>
+                </div>
+                <!-- 3 line menu bar -->
+                <div id="menu-bar-div">
+                    <img src="assets/menu-bar.png">
+                </div>
                 
             </header>
 
             <main>
+                <!-- Background image -->
+                <img src="assets/hogwarts-crest.png" alt="the background image" width="200">
+
+                <!-- The sections for the entity information -->
+
+                <!-- Entity #1 -->
+                <section class="entity-table-section">
+                    <table class="entity-table">
+                        <tr class="entity-table-row">
+                            <td class="row-name">Name:</td>
+                            <td class="row-content" id="entity-1-name">Hogwarts School of Witchcraft and Wizardry</td>
+                            <td><button class="copy-button" id="entity-1-name-copy-button">Copy</button></td>
+                        </tr>
+                        <tr class="entity-table-row">
+                            <td class="row-name">Address:</td>
+                            <td class="row-content" id="entity-1-address">Scottish Highlands</td>
+                            <td><button class="copy-button" id="entity-1-address-copy-button">Copy</button></td>
+                        </tr>
+                        <tr class="entity-table-row">
+                            <td class="row-name">Contact:</td>
+                            <td class="row-content" id="entity-1-contact">Owl</td>
+                            <td><button class="copy-button" id="entity-1-contact-copy-button">Copy</button></td>
+                        </tr>
+                        <tr class="entity-table-row">
+                            <td class="row-name">Email:</td>
+                            <td class="row-content" id="entity-1-email">Hogwarts.edu@witchcraftandwizardry.com</td>
+                            <td><button class="copy-button" id="entity-1-email-copy-button">Copy</button></td>
+                        </tr>
+                        <tr class="entity-table-row">
+                            <td class="row-name">Phone:</td>
+                            <td class="row-content" id="entity-1-phone">801-504-2545</td>
+                            <td><button class="copy-button" id="entity-1-phone-copy-button">Copy</button></td>
+                        </tr>
+                    </table>
+
+                </section>
+                
 
             </main>
         </div>
