@@ -11,7 +11,7 @@ Ideas:
 - Have a mobile version that makes copying data from the site easy. For example, the user can drag the page to make it smaller and have it in the corner of the screen.
 - In the menu screen, have a button the user can click to resize the screen. That way, they can make the screen smaller at the click of a button. https://www.w3schools.com/jsref/
 met_win_resizeto.asp
-- Include a text area in the page to include large text. For example, for the harry potter theme, there can be a large text field with the hogwarts letter and list of school supplies.
+- In the dropdown menu, include checkboxes for filters. The user can filter for the type of data they need: correctly formatted, incorrectly formatted, social security numbers, phone numbers, etc.
 
 How to access the page:
 This site is currently hosted on GitHub pages here: https://jadenmounteer.github.io/NBS-Dummy-Data/
