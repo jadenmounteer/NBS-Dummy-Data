@@ -27,16 +27,37 @@
                 <div id="dummy-data-title-div">
                     <h1 id="dummy-data-title">Dummy Data</h1>
                 </div>
-                <!-- 3 line menu bar -->
-                <div id="menu-bar-div">
-                    <img src="assets/menu-bar.png">
+
+                <!-- Dropdown menu and hamburger menu -->
+                <div class="dropdown">
+
+                    <!-- Menu icon -->
+                    <div id="hamburger-menu" onclick="displayOrRemoveDropdown(this)" class="dropbtn">
+                        <div class="hamburger-menu-line" id="bar1"></div>
+                        <div class="hamburger-menu-line" id="bar2"></div>
+                        <div class="hamburger-menu-line" id="bar3"></div>
+                    </div>
+                    
+                    <!-- The dropdown menu -->
+                    <div id="myDropdown" class="dropdown-content">
+                        <h2 class="dropdown-header">Themes</h2>
+                      <a href="#">Harry Potter</a>
+                      <a href="#">Star Wars</a>
+                      <a href="#">DC</a>
+                      <a href="#">Marvel</a>
+                    </div>
+
                 </div>
+                
                 
             </header>
 
             <main>
                 <!-- Background image -->
-                <img src="assets/hogwarts-crest.png" alt="the background image" width="200">
+                <!--
+                    <img src="assets/hogwarts-crest.png" alt="the background image" width="200">
+                -->
+                
 
                 <!-- The sections for the entity information -->
 

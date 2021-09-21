@@ -1,0 +1,141 @@
+/* COLORS */
+
+/*** FONTS ***/
+
+/* HARRY POTTER */
+
+/* Import the Harry Potter font which was downloaded from the internet Use this for the logo */
+@font-face {
+    font-family: harry-potter;
+    src: url(https://cdn.glitch.com/96e7d60a-fbf1-48c3-a81b-6fd525ffafe8%2FHarryP-MVZ6w.ttf?v=1622323399739);
+}
+
+/* Import the Lumos Latino font to use for headers. */
+@font-face {
+    font-family: lumos-latino;
+    src: url(https://cdn.glitch.com/96e7d60a-fbf1-48c3-a81b-6fd525ffafe8%2FLumoslatino-XA8K.ttf?v=1622323400147);
+}
+
+
+
+/* Reset the margin and padding of everything so we can get rid of the white border that the browser gives us by default*/
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+/* STYLE THE HEADER */
+
+header {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 40% 50% 10%;
+    grid-template-rows: 1;
+}
+
+/* The title */
+#dummy-data-title {
+    font-family: harry-potter, lumos-latino;
+    color: #EDC664;
+    font-size: 5em;
+}
+
+/* STYLE THE BODY OF THE PAGE */
+body {
+    background-color: black;
+    background-image: url("assets/hogwarts-crest.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 500px;
+    background-position: center;
+}
+
+
+
+/* STYLE THE DROPDOWN MENU */
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+
+
+/* Style the Hamburger Menu icon */
+
+  .dropbtn {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  #bar1, #bar2, #bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #EDC664;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  
+  /* Rotate first bar */
+  .change #bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+  }
+  
+  /* Fade out the second bar */
+  .change #bar2 {
+    opacity: 0;
+  }
+  
+  /* Rotate last bar */
+  .change #bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+  }
+
+
+  /* STYLE THE MAIN CONTENT OF THE PAGE */
+
+/* The background image */
+main {
+    
+    
+
+}
+
+/* STYLE THE TABLES */
+table {
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Style the rows */
+tr {
+    background-color: rgb(255,255,255, 0.9);
+}
