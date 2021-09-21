@@ -13,6 +13,8 @@ Ideas:
 met_win_resizeto.asp
 - In the dropdown menu, include checkboxes for filters. The user can filter for the type of data they need: correctly formatted, incorrectly formatted, social security numbers, phone numbers, etc.
 - Have a Halloween theme. Change the crest out for a pumpkin. The entity names will be scary movie characters.
+- It would also be cool if I could link data to hotkeys. 
+- The filters could be stored in JavaScript memory.
 
 How to access the page:
 This site is currently hosted on GitHub pages here: https://jadenmounteer.github.io/NBS-Dummy-Data/
