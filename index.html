@@ -6,9 +6,8 @@
         <!-- Link to the CSS Stylesheet -->
         <link rel="stylesheet" href="styles.css" />
         <!-- Link to the JavaScript file-->        
-            <script src="js/script.js" defer></script>
+        <script src="js/script.js" defer></script>
 
-        
         <title>NBS Dummy Data</title>
     </head>
     <body>
@@ -43,31 +42,31 @@
 
                 <!-- Entity #1 -->
                 <section class="entity-table-section">
-                    <table class="entity-table">
+                    <table class="entity-table" id="entity-1-table">
                         <tr class="entity-table-row">
                             <td class="row-name">Name:</td>
-                            <td class="row-content" id="entity-1-name">Hogwarts School of Witchcraft and Wizardry</td>
-                            <td><button class="copy-button" id="entity-1-name-copy-button">Copy</button></td>
+                            <td class="row-content"><p id="entity-1-name" >Hogwarts School of Witchcraft and Wizardry</p></td>
+                            <td><button class="copy-button" id="entity-1-name-copy-button" onclick="copyText('entity-1-name', 'entity-1-name-copy-button')">Copy</button></td>
                         </tr>
                         <tr class="entity-table-row">
                             <td class="row-name">Address:</td>
-                            <td class="row-content" id="entity-1-address">Scottish Highlands</td>
-                            <td><button class="copy-button" id="entity-1-address-copy-button">Copy</button></td>
+                            <td class="row-content"><p id="entity-1-address">Scottish Highlands</p></td>
+                            <td><button class="copy-button" id="entity-1-address-copy-button" onclick="copyText('entity-1-address', 'entity-1-address-copy-button')">Copy</button></td>
                         </tr>
                         <tr class="entity-table-row">
                             <td class="row-name">Contact:</td>
-                            <td class="row-content" id="entity-1-contact">Owl</td>
-                            <td><button class="copy-button" id="entity-1-contact-copy-button">Copy</button></td>
+                            <td class="row-content"><p id="entity-1-contact">Owl</p></td>
+                            <td><button class="copy-button" id="entity-1-contact-copy-button" onclick="copyText('entity-1-contact', 'entity-1-contact-copy-button')">Copy</button></td>
                         </tr>
                         <tr class="entity-table-row">
                             <td class="row-name">Email:</td>
-                            <td class="row-content" id="entity-1-email">Hogwarts.edu@witchcraftandwizardry.com</td>
-                            <td><button class="copy-button" id="entity-1-email-copy-button">Copy</button></td>
+                            <td class="row-content"><p id="entity-1-email">Hogwarts.edu@witchcraftandwizardry.com</p></td>
+                            <td><button class="copy-button" id="entity-1-email-copy-button" onclick="copyText('entity-1-email', 'entity-1-email-copy-button')">Copy</button></td>
                         </tr>
                         <tr class="entity-table-row">
                             <td class="row-name">Phone:</td>
-                            <td class="row-content" id="entity-1-phone">801-504-2545</td>
-                            <td><button class="copy-button" id="entity-1-phone-copy-button">Copy</button></td>
+                            <td class="row-content"><p id="entity-1-phone">801-504-2545</p></td>
+                            <td><button class="copy-button" id="entity-1-phone-copy-button" onclick="copyText('entity-1-phone', 'entity-1-phone-copy-button')">Copy</button></td>
                         </tr>
                     </table>
 
@@ -77,4 +76,5 @@
             </main>
         </div>
     </body>
+    
 </html>
