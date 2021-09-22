@@ -184,17 +184,18 @@ If it is checked, it clears the elements according to the id.
 If it isn't checked anymore, it makes those elements visible again.
 */
 function checkFilter(checkBoxId) {
-    console.log("Checking box!");
+    
     // Store the checkbox in a variable.
     const checkBox = document.getElementById(checkBoxId);
 
-    // If the box is checked...
-    if (checkBox.checked) {
+    // If the box is not checked...
+    if (!checkBox.checked) {
         
         // Check the id of the box. Call the appropriate function based on the id
         switch(checkBoxId) {
             // If the id is for the name elements...
             case 'checkbox-name':
+
                 // Call the filterOutElements() function with "name-row" as the parameter
                 filterOutElements('name-row');
                 break;
@@ -205,11 +206,36 @@ function checkFilter(checkBoxId) {
                 filterOutElements('address-row');
                 break;
 
+            // If the id is for the email elements...
+            case 'checkbox-email':
+                // Call the filterOutElements() function with "email-row" as the parameter
+                filterOutElements('email-row');
+                break;
+
+            // If the id is for the phone elements...
+            case 'checkbox-phone':
+                // Call the filterOutElements() function with "phone-row" as the parameter
+                filterOutElements('phone-row');
+                break;
+
+            // If the id is for the city elements...
+            case 'checkbox-city':
+                // Call the filterOutElements() function with "city-row" as the parameter
+                filterOutElements('city-row');
+                break;
+
+            // If the id is for the street elements...
+            case 'checkbox-street':
+                // Call the filterOutElements() function with "address-row" as the parameter
+                filterOutElements('street-row');
+                break;
+
         }
 
-
+        // Set the checkbox as unchecked in local storage so the browser remembers
+        localStorage.setItem(checkBoxId, 'unchecked');
     }
-    // If it isn't checked...
+    // If it is checked...
     else {
         // Check the id of the box. Call the appropriate function based on the id
         switch(checkBoxId) {
@@ -224,7 +250,34 @@ function checkFilter(checkBoxId) {
                 // Call the filterInElements() function with "address-row" as the parameter
                 filterInElements('address-row');
                 break;
+
+            // If the id is for the email elements...
+            case 'checkbox-email':
+                // Call the filterInElements() function with "email-row" as the parameter
+                filterInElements('email-row');
+                break;
+
+            // If the id is for the phone elements...
+            case 'checkbox-phone':
+                // Call the filterInElements() function with "phone-row" as the parameter
+                filterInElements('phone-row');
+                break;
+
+            // If the id is for the city elements...
+            case 'checkbox-city':
+                // Call the filterInElements() function with "city-row" as the parameter
+                filterInElements('city-row');
+                break;
+
+            // If the id is for the street elements...
+            case 'checkbox-strett':
+                // Call the filterInElements() function with "street-row" as the parameter
+                filterInElements('street-row');
+                break;
         }
+
+        // Set the checkbox as checked in local storage so the browser remembers
+        localStorage.setItem(checkBoxId, 'checked');
 
     }
 }
@@ -259,9 +312,38 @@ function filterInElements(className) {
 
 }
 
-// This code is called when the page loads.
+/*
+Loads the filter values from local storage so the page loads 
+the filter the user previously used 
+*/
+function rememberFilters() {
+    // Create a list of the checkbox id's
+    const checkboxIds = ['checkbox-name', 'checkbox-address', 'checkbox-email', 'checkbox-phone', 'checkbox-city', 'checkbox-street'];
+
+    // Loop through the list
+    for (let i=0; i<checkboxIds.length; i++) {
+        // Get the item from local storage
+        let checkedOrUnchecked = localStorage.getItem(checkboxIds[i]);
+
+        // If the checkbox was unchecked...
+        if (checkedOrUnchecked == 'unchecked') {
+            // Set the HTML element's checked property to false
+            document.getElementById(checkboxIds[i]).checked = false;
+
+            // Call the checkFilter function
+            checkFilter(checkboxIds[i]);
+        }
+    }
+
+
+}
+
+
+/*** This code is called when the page loads. ***/ 
 
 // Call the changeTheme function
 changeTheme();
 
+// Call the rememberFilters function
+rememberFilters();
 

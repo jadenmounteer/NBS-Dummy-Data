@@ -20,6 +20,5 @@ met_win_resizeto.asp
 - The filters could be stored in JavaScript memory. Whenever a new page is loaded, it can check the memory to see which boxes were checked, it checks the boxes and calls the onclick function for them.
 - I could include items with dollar ammounts. For example, on the Harry Potter them, I could add items for sell by the weasley twins, broomsticks, etc.
 - The Javascript won't change the color of the button when I click on it. Instead, it will give the button a class which will be styled by the CSS.
-- I should make it so that the checkboxes are checked by defualt, and then you uncheck them to make elements disapear
 
 

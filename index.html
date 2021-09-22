@@ -44,10 +44,19 @@
                         <a href="index.html"><strong>Harry Potter</strong></a>
                         <a href="halloween.html">Halloween</a>
                         <h2 class="dropdown-header">Filters</h2>
-                        <input type="checkbox" id="checkbox-name" name="checkbox-name" value="name" onclick="checkFilter('checkbox-name')">
-                        <label class="checkbox-label" for="checkbox-name">Names</label>
-                        <input type="checkbox" id="checkbox-address" name="checkbox-address" value="name" onclick="checkFilter('checkbox-address')">
-                        <label class="checkbox-label" for="checkbox-address">Addresses</label>
+                        <input type="checkbox" id="checkbox-name" name="checkbox-name" value="name" onclick="checkFilter('checkbox-name')" checked>
+                        <label class="checkbox-label" for="checkbox-name">Names</label><br>
+                        <input type="checkbox" id="checkbox-address" name="checkbox-address" value="address" onclick="checkFilter('checkbox-address')" checked>
+                        <label class="checkbox-label" for="checkbox-address">Addresses</label><br>
+
+                        <input type="checkbox" id="checkbox-email" name="checkbox-email" value="email" onclick="checkFilter('checkbox-email')" checked>
+                        <label class="checkbox-label" for="checkbox-email">Emails</label><br>
+                        <input type="checkbox" id="checkbox-phone" name="checkbox-phone" value="phone" onclick="checkFilter('checkbox-phone')" checked>
+                        <label class="checkbox-label" for="checkbox-phone">Phone Numbers</label><br>
+                        <input type="checkbox" id="checkbox-city" name="checkbox-city" value="city" onclick="checkFilter('checkbox-city')" checked>
+                        <label class="checkbox-label" for="checkbox-city">Cities</label><br>
+                        <input type="checkbox" id="checkbox-street" name="checkbox-street" value="street" onclick="checkFilter('checkbox-street')" checked>
+                        <label class="checkbox-label" for="checkbox-street">Streets</label><br>
 
                     </div>
 
@@ -74,17 +83,17 @@
                             <td class="row-content"><p id="entity-1-address">Scottish Highlands</p></td>
                             <td><button class="copy-button" id="entity-1-address-copy-button" onclick="copyText('entity-1-address', 'entity-1-address-copy-button')">Copy</button></td>
                         </tr>
-                        <tr class="entity-table-row">
+                        <tr class="entity-table-row, contact-row">
                             <td class="row-name">Contact:</td>
                             <td class="row-content"><p id="entity-1-contact">Owl</p></td>
                             <td><button class="copy-button" id="entity-1-contact-copy-button" onclick="copyText('entity-1-contact', 'entity-1-contact-copy-button')">Copy</button></td>
                         </tr>
-                        <tr class="entity-table-row">
+                        <tr class="entity-table-row, email-row">
                             <td class="row-name">Email:</td>
                             <td class="row-content"><p id="entity-1-email">Hogwarts.edu@witchcraftandwizardry.com</p></td>
                             <td><button class="copy-button" id="entity-1-email-copy-button" onclick="copyText('entity-1-email', 'entity-1-email-copy-button')">Copy</button></td>
                         </tr>
-                        <tr class="entity-table-row">
+                        <tr class="entity-table-row, phone-row">
                             <td class="row-name">Phone:</td>
                             <td class="row-content"><p id="entity-1-phone">801-504-2545</p></td>
                             <td><button class="copy-button" id="entity-1-phone-copy-button" onclick="copyText('entity-1-phone', 'entity-1-phone-copy-button')">Copy</button></td>
@@ -100,27 +109,27 @@
                             <td class="row-content"><p id="entity-2-name" >Serius Black</p></td>
                             <td><button class="copy-button" id="entity-2-name-copy-button" onclick="copyText('entity-2-name', 'entity-2-name-copy-button')">Copy</button></td>
                         </tr>
-                        <tr class="entity-table-row">
+                        <tr class="entity-table-row, city-row">
                             <td class="row-name">City:</td>
                             <td class="row-content"><p id="entity-2-city">London</p></td>
                             <td><button class="copy-button" id="entity-2-city-copy-button" onclick="copyText('entity-2-city', 'entity-2-city-copy-button')">Copy</button></td>
                         </tr>
-                        <tr class="entity-table-row">
+                        <tr class="entity-table-row, street-row">
                             <td class="row-name">Street:</td>
                             <td class="row-content"><p id="entity-2-street">12 Grimauld Place</p></td>
                             <td><button class="copy-button" id="entity-2-street-copy-button" onclick="copyText('entity-2-street', 'entity-2-street-copy-button')">Copy</button></td>
                         </tr>
-                        <tr class="entity-table-row">
+                        <tr class="entity-table-row, contact-row">
                             <td class="row-name">Contact:</td>
                             <td class="row-content"><p id="entity-2-contact">Phineas Nigellus Black's Portrait</p></td>
                             <td><button class="copy-button" id="entity-2-contact-copy-button" onclick="copyText('entity-2-contact', 'entity-2-contact-copy-button')">Copy</button></td>
                         </tr>
-                        <tr class="entity-table-row">
+                        <tr class="entity-table-row, email-row">
                             <td class="row-name">Email:</td>
                             <td class="row-content"><p id="entity-2-email">Serius_Black@azkaban.com</p></td>
                             <td><button class="copy-button" id="entity-2-email-copy-button" onclick="copyText('entity-2-email', 'entity-2-email-copy-button')">Copy</button></td>
                         </tr>
-                        <tr class="entity-table-row">
+                        <tr class="entity-table-row, phone-row">
                             <td class="row-name">Phone:</td>
                             <td class="row-content"><p id="entity-2-phone">801-610-5540</p></td>
                             <td><button class="copy-button" id="entity-2-phone-copy-button" onclick="copyText('entity-2-phone', 'entity-2-phone-copy-button')">Copy</button></td>
@@ -136,37 +145,37 @@
                             <td class="row-content"><p id="entity-3-name" >Mr H. Potter</p></td>
                             <td><button class="copy-button" id="entity-3-name-copy-button" onclick="copyText('entity-3-name', 'entity-3-name-copy-button')">Copy</button></td>
                         </tr>
-                        <tr class="entity-table-row">
+                        <tr class="entity-table-row, room-row">
                             <td class="row-name">Room:</td>
                             <td class="row-content"><p id="entity-3-room">The Cupboard under the Stairs</p></td>
                             <td><button class="copy-button" id="entity-3-room-copy-button" onclick="copyText('entity-3-room', 'entity-3-room-copy-button')">Copy</button></td>
                         </tr>
-                        <tr class="entity-table-row">
+                        <tr class="entity-table-row, street-row">
                             <td class="row-name">Street:</td>
                             <td class="row-content"><p id="entity-3-street">4 Privet Drive,</p></td>
                             <td><button class="copy-button" id="entity-3-street-copy-button" onclick="copyText('entity-3-street', 'entity-3-street-copy-button')">Copy</button></td>
                         </tr>
-                        <tr class="entity-table-row">
+                        <tr class="entity-table-row, town-row">
                             <td class="row-name">Town:</td>
                             <td class="row-content"><p id="entity-3-town">Little Whinging</p></td>
                             <td><button class="copy-button" id="entity-3-town-copy-button" onclick="copyText('entity-3-town', 'entity-3-town-copy-button')">Copy</button></td>
                         </tr>
-                        <tr class="entity-table-row">
+                        <tr class="entity-table-row, county-row">
                             <td class="row-name">County:</td>
                             <td class="row-content"><p id="entity-3-county">Surrey</p></td>
                             <td><button class="copy-button" id="entity-3-county-copy-button" onclick="copyText('entity-3-county', 'entity-3-county-copy-button')">Copy</button></td>
                         </tr>
-                        <tr class="entity-table-row">
+                        <tr class="entity-table-row, contact-row">
                             <td class="row-name">Contact:</td>
                             <td class="row-content"><p id="entity-3-contact">Hedwig</p></td>
                             <td><button class="copy-button" id="entity-3-contact-copy-button" onclick="copyText('entity-3-contact', 'entity-3-contact-copy-button')">Copy</button></td>
                         </tr>
-                        <tr class="entity-table-row">
+                        <tr class="entity-table-row, email-row">
                             <td class="row-name">Email:</td>
                             <td class="row-content"><p id="entity-3-email">Hpotter@howgwarts.com</p></td>
                             <td><button class="copy-button" id="entity-3-email-copy-button" onclick="copyText('entity-3-email', 'entity-3-email-copy-button')">Copy</button></td>
                         </tr>
-                        <tr class="entity-table-row">
+                        <tr class="entity-table-row, phone-row">
                             <td class="row-name">Phone:</td>
                             <td class="row-content"><p id="entity-3-phone">801-512-5564</p></td>
                             <td><button class="copy-button" id="entity-3-phone-copy-button" onclick="copyText('entity-3-phone', 'entity-3-phone-copy-button')">Copy</button></td>
