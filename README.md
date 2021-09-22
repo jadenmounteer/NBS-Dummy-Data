@@ -17,7 +17,7 @@ met_win_resizeto.asp
 - In the dropdown menu, include checkboxes for filters. The user can filter for the type of data they need: correctly formatted, incorrectly formatted, social security numbers, phone numbers, etc.
 - Have a Halloween theme. Change the crest out for a pumpkin. The entity names will be scary movie characters or classic monsters.
 - It would also be cool if I could link data to hotkeys. 
-- The filters could be stored in JavaScript memory.
+- The filters could be stored in JavaScript memory. Whenever a new page is loaded, it can check the memory to see which boxes were checked, it checks the boxes and calls the onclick function for them.
 - I could include items with dollar ammounts. For example, on the Harry Potter them, I could add items for sell by the weasley twins, broomsticks, etc.
 - The Javascript won't change the color of the button when I click on it. Instead, it will give the button a class which will be styled by the CSS.
 
