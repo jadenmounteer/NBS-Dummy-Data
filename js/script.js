@@ -114,6 +114,11 @@ function changeStylesToHalloween() {
         document.fonts.add(loaded_face);
         // Change the font of the dummy data title 
         document.getElementById('dummy-data-title').style.fontFamily = "'Creepster', cursive";
+        // Change the font of the copy buttons
+        let listOfButtons = document.getElementsByClassName('copy-button');
+        for (let i=0; i < listOfButtons.length; i++) {
+            listOfButtons[i].style.fontFamily = "'Creepster', cursive";
+        }
     }).catch(function(error) {
         // Error occured
         console.log("An error has occured loading the font");
@@ -124,10 +129,10 @@ function changeStylesToHalloween() {
     headerFont.load().then(function(loaded_face) {
         // loaded_face holds the loaded FontFace
         document.fonts.add(loaded_face);
-        // Change the font copy buttons
-        let listOfButtons = document.getElementsByClassName('copy-button');
-        for (let i=0; i < listOfButtons.length; i++) {
-            listOfButtons[i].style.fontFamily = "'Sancreek', cursive";
+        // Change the font of the row names
+        let listOfNames = document.getElementsByClassName('row-name');
+        for (let i=0; i < listOfNames.length; i++) {
+            listOfNames[i].style.fontFamily = "'Sancreek', cursive";
         }
     }).catch(function(error) {
         // Error occured
@@ -141,6 +146,16 @@ function changeStylesToHalloween() {
     document.body.style.backgroundColor = "#602749";
     // Header
     document.getElementById('header').style.backgroundColor = "#602749";
+    // Hamburger menu
+    let listOfLines = document.getElementsByClassName('hamburger-menu-line');
+    for (let i=0; i < listOfLines.length; i++) {
+        listOfLines[i].style.backgroundColor = "#ffa500";
+    }
+    // Buttons
+    let listOfButtons = document.getElementsByClassName('copy-button');
+        for (let i=0; i < listOfButtons.length; i++) {
+            listOfButtons[i].style.backgroundColor = "#ffa500";
+        }
 
 
 
@@ -162,8 +177,91 @@ function changeStylesToHarryPotter() {
 
 }
 
+/*
+Called when the user clicks a filter box.
+Checks whether or not the box is checked.
+If it is checked, it clears the elements according to the id.
+If it isn't checked anymore, it makes those elements visible again.
+*/
+function checkFilter(checkBoxId) {
+    console.log("Checking box!");
+    // Store the checkbox in a variable.
+    const checkBox = document.getElementById(checkBoxId);
+
+    // If the box is checked...
+    if (checkBox.checked) {
+        
+        // Check the id of the box. Call the appropriate function based on the id
+        switch(checkBoxId) {
+            // If the id is for the name elements...
+            case 'checkbox-name':
+                // Call the filterOutElements() function with "name-row" as the parameter
+                filterOutElements('name-row');
+                break;
+
+            // If the id is for the address elements...
+            case 'checkbox-address':
+                // Call the filterOutElements() function with "address-row" as the parameter
+                filterOutElements('address-row');
+                break;
+
+        }
+
+
+    }
+    // If it isn't checked...
+    else {
+        // Check the id of the box. Call the appropriate function based on the id
+        switch(checkBoxId) {
+            // If the id is for the name elements...
+            case 'checkbox-name':
+                // Call the filterInElements() function with "name-row" as the parameter
+                filterInElements('name-row');
+                break;
+
+            // If the id is for the address elements...
+            case 'checkbox-address':
+                // Call the filterInElements() function with "address-row" as the parameter
+                filterInElements('address-row');
+                break;
+        }
+
+    }
+}
+
+/* 
+Filters out elements based on the class name
+*/
+function filterOutElements(className) {
+    // Create a list of all the elements on the page with this class name
+    let listOfElements = document.getElementsByClassName(className);
+
+    // Loop through the list...
+    for (let i=0; i<listOfElements.length; i++) {
+        // Set the display of each element to none
+        listOfElements[i].style.display = 'none';
+    }
+
+}
+
+/* 
+Filters in elements based on the class name
+*/
+function filterInElements(className) {
+    // Create a list of all the elements on the page with this class name
+    let listOfElements = document.getElementsByClassName(className);
+
+    // Loop through the list...
+    for (let i=0; i<listOfElements.length; i++) {
+        // Set the display of each element to an empty string, that way, we keep the original display properties
+        listOfElements[i].style.display = '';
+    }
+
+}
 
 // This code is called when the page loads.
 
 // Call the changeTheme function
 changeTheme();
+
+

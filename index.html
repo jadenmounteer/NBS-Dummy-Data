@@ -41,11 +41,13 @@
                     <!-- The dropdown menu -->
                     <div id="myDropdown" class="dropdown-content">
                         <h2 class="dropdown-header">Themes</h2>
-                      <a href="index.html"><strong>Harry Potter</strong></a>
-                      <a href="#">Star Wars</a>
-                      <a href="#">DC</a>
-                      <a href="#">Marvel</a>
-                      <a href="halloween.html">Halloween</a>
+                        <a href="index.html"><strong>Harry Potter</strong></a>
+                        <a href="halloween.html">Halloween</a>
+                        <h2 class="dropdown-header">Filters</h2>
+                        <input type="checkbox" id="checkbox-name" name="checkbox-name" value="name" onclick="checkFilter('checkbox-name')">
+                        <label class="checkbox-label" for="checkbox-name">Names</label>
+                        <input type="checkbox" id="checkbox-address" name="checkbox-address" value="name" onclick="checkFilter('checkbox-address')">
+                        <label class="checkbox-label" for="checkbox-address">Addresses</label>
 
                     </div>
 
@@ -62,12 +64,12 @@
                 <!-- Entity #1 -->
                 <section class="entity-table-section">
                     <table class="entity-table" id="entity-1-table">
-                        <tr class="entity-table-row">
+                        <tr class="entity-table-row, name-row">
                             <td class="row-name">Name:</td>
                             <td class="row-content"><p id="entity-1-name" >Hogwarts School of Witchcraft and Wizardry</p></td>
                             <td><button class="copy-button" id="entity-1-name-copy-button" onclick="copyText('entity-1-name', 'entity-1-name-copy-button')">Copy</button></td>
                         </tr>
-                        <tr class="entity-table-row">
+                        <tr class="entity-table-row, address-row">
                             <td class="row-name">Address:</td>
                             <td class="row-content"><p id="entity-1-address">Scottish Highlands</p></td>
                             <td><button class="copy-button" id="entity-1-address-copy-button" onclick="copyText('entity-1-address', 'entity-1-address-copy-button')">Copy</button></td>
@@ -93,7 +95,7 @@
                 <!-- Entity #2 -->
                 <section class="entity-table-section">
                     <table class="entity-table" id="entity-2-table">
-                        <tr class="entity-table-row">
+                        <tr class="entity-table-row, name-row">
                             <td class="row-name">Name:</td>
                             <td class="row-content"><p id="entity-2-name" >Serius Black</p></td>
                             <td><button class="copy-button" id="entity-2-name-copy-button" onclick="copyText('entity-2-name', 'entity-2-name-copy-button')">Copy</button></td>
@@ -129,7 +131,7 @@
                 <!-- Entity #3 -->
                 <section class="entity-table-section">
                     <table class="entity-table" id="entity-3-table">
-                        <tr class="entity-table-row">
+                        <tr class="entity-table-row, name-row">
                             <td class="row-name">Name:</td>
                             <td class="row-content"><p id="entity-3-name" >Mr H. Potter</p></td>
                             <td><button class="copy-button" id="entity-3-name-copy-button" onclick="copyText('entity-3-name', 'entity-3-name-copy-button')">Copy</button></td>

@@ -124,7 +124,7 @@ body {
   }
 
   #hamburger-menu {
-      margin-left: 110px;
+      margin-left: 80px;
   }
 
   
@@ -189,6 +189,7 @@ p {
 .copy-button:hover {
     background-color: #ad080a;
     color: #fbc061;
+    cursor: pointer;
 }
 
 /* STYLE THE TEXT AREAS */

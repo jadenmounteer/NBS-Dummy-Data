@@ -2,6 +2,9 @@
 This is a web app for National Benefit Services that holds dummy data for testing AWD forms. The user can copy and paste dummy data from the site and into AWD.
 The user will be able to change the theme of the page and dummy data at the click of a button.
 
+How to access the page:
+This site is currently hosted on GitHub pages here: https://jadenmounteer.github.io/NBS-Dummy-Data/
+
 Ideas:
 - We can have a Harry Potter theme.
 - We can have a DC theme
@@ -16,6 +19,6 @@ met_win_resizeto.asp
 - It would also be cool if I could link data to hotkeys. 
 - The filters could be stored in JavaScript memory.
 - I could include items with dollar ammounts. For example, on the Harry Potter them, I could add items for sell by the weasley twins, broomsticks, etc.
+- The Javascript won't change the color of the button when I click on it. Instead, it will give the button a class which will be styled by the CSS.
 
-How to access the page:
-This site is currently hosted on GitHub pages here: https://jadenmounteer.github.io/NBS-Dummy-Data/
+
