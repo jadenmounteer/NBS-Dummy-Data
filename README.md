@@ -20,5 +20,17 @@ met_win_resizeto.asp
 - The filters could be stored in JavaScript memory. Whenever a new page is loaded, it can check the memory to see which boxes were checked, it checks the boxes and calls the onclick function for them.
 - I could include items with dollar ammounts. For example, on the Harry Potter them, I could add items for sell by the weasley twins, broomsticks, etc.
 - The Javascript won't change the color of the button when I click on it. Instead, it will give the button a class which will be styled by the CSS.
+- We could let the user establish how many characters are in the text field. For example, he can change it to 75 or even 150.
 
+
+ROI
+Testing a process
+2:07.41 - Without dummy date (127 seconds)
+1:37.96 - With dummy data (97 seconds)
+
+We save 30 seconds per test
+
+If we do 5 tests a day that is 150 seconds saved
+We work 5 days a week, that is 750 seconds saved a week
+52 weeks in a year would give us 39,000 seconds saved a year. That is 650 minutes or roughly 11 hours.
 
